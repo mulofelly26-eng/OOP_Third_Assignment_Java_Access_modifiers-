@@ -26,5 +26,4 @@ public class Doctor {
     public void viewPatient(PatientRecords pt){
         pt.displayPatientFullInfo(this);
     }
-
 }
