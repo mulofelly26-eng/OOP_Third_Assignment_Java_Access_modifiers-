@@ -1,4 +1,5 @@
 package Hospital.Clinical;
+import Hospital.Records.PatientRecords;
 
 public class Doctor {
     private String doctorID;
@@ -16,4 +17,14 @@ public class Doctor {
         System.out.println("Doctor ID: " + doctorID);
         System.out.println("Specialization: " + specialization);
     }
+    public void SetPatientiIllness(PatientRecords pt, String NewIllness ){
+        pt.SetIlleness(this, NewIllness);
+    }
+    public void SetPatientTypeOfTreatment(PatientRecords pt, String NewTreatment ){
+        pt.SetTypeOfTreatment(this, NewTreatment);
+    }
+    public void viewPatient(PatientRecords pt){
+        pt.displayPatientFullInfo(this);
+    }
+
 }
