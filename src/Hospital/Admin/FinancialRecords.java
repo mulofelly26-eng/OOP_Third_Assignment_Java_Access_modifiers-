@@ -32,6 +32,14 @@ public class FinancialRecords {
         checkAdmin(adm);
         return calculateBalance();
     }
+    public void addPayment(Admin adm, double amount){
+        checkAdmin(adm);
+        if(amount <= 0 ){
+            System.out.println("Invalid amount");
+            return;
+        }
+        amountPaid += amount;
+    }
     public void displayFinancialRecords(Admin adm){
         checkAdmin(adm);
         System.out.println("----------Financial Records-----------");
