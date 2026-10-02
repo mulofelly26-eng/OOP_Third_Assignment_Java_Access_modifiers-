@@ -19,4 +19,12 @@ public class PatientRecords {
     public int getPatientID() {return patientID;}
     public String getName() {return name;}
     public String getAppointmentdate() {return appointmentdate;}
+
+    public void displayPatientBasicsInfo(){
+        System.out.println("============ PATIENT INFO ============");
+        System.out.println("Patient ID: " + this.patientID);
+        System.out.println("Name: " + this.name);
+        System.out.println("Appointment date: " + this.appointmentdate);
+
+    }
 }
